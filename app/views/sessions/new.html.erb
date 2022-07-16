@@ -10,6 +10,11 @@
 
       <%= d.label :password, class: "label-login" %>
       <%= d.password_field :password, class: 'form-control' %>
+      
+      <%= d.label :remember_me, class: "checkbox inline checkbox-login", for: "remember-me" do %>
+        <%= d.check_box :remember_me, id: "remember-me" %>
+        <span>ログイン情報を記憶する</span>
+      <% end %>
 
       <%= d.submit "ログイン", class: "btn btn-primary btn-block btn-login" %>
     <% end %>
